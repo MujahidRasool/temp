@@ -1,0 +1,125 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#409DA5"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/circle"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="AQI"
+
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:text="68"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:drawableLeft="@drawable/ic_hot"
+            android:gravity="center"
+            android:text="27.9 °C"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+        android:gravity="center"
+        android:text="Jahndwala Nahu Stadium ,Delhi Delhi, India"
+        android:textColor="@color/white"
+        android:textSize="13sp" />
+
+    <com.github.angads25.toggle.widget.LabeledSwitch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:textSize="14sp"
+        app:colorBorder="@color/colorAccent"
+        app:on="false" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_ac"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:weightSum="5">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="#FF5722"
+            android:gravity="center"
+            android:text="Bear Able"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="#ED0621"
+            android:gravity="center"
+            android:text="Not bear able"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="#673AB7"
+            android:gravity="center"
+            android:text="Very Unhappy"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:background="#531400"
+            android:gravity="center"
+            android:text="Totaly Bad"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+</LinearLayout>
